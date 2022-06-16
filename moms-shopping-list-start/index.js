@@ -57,6 +57,17 @@ form.addEventListener("submit", function (event) {
         li.append(editButton)
     })
 
+    // possible solution:
+    // use conditional statement to toggle between edit and save button (ternary statement?)
+    // var saveButton = function () {
+    //     if (editButton.textContent = "edit" && editButton.onclick) {
+    //         editButton.textContent = "save";
+    //         editButton.className = "save";
+    //     } else {
+    //         editButton.textContent = "edit";
+    //         editButton.className = "edit";
+    //     }
+    // };
 
 })
 
