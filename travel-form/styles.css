@@ -1,0 +1,43 @@
+body {
+    background-color: #96cdbb;
+}
+
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    /* color: #fcf9d6; */
+    /* background-color: #9f4b64; */
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+form {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    /* color: #9f4b64; */
+    background-color: #f8e5d9;
+    padding: 10px;
+}
+
+#name-age-info {
+    margin-bottom: 10px;
+}
+
+#gender-info {
+    margin-bottom: 10px;
+}
+
+#location-info {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #7fa1a6;
+}
+
+@media screen and (min-width: 46.25em) {
+    form {
+        padding-left: 55px;
+    }
+}

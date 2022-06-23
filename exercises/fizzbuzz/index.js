@@ -23,24 +23,24 @@ console.log(typeof (numbersListArr[0]))
 // it'll stop looking after it finds an if that's true
 
 
-// // let initialValue = { fizz: 0, buzz: 0, fizzbuzz: 0 }
-// let countsFizzBuzz = numbersListArr.reduce(function (previous, number) {
-//     // let i = 0;
-//     if (newNumber.textContent === "fizz") {
-//         previous++;
-//     }
-//     if (newNumber.textContent === "buzz") {
-//         previous++;
-//     }
-//     if (newNumber.textContent === "fizzbuzz") {
-//         previous++;
-//     }
-//     return previous;
-// }, { fizz: 0, buzz: 0, fizzbuzz: 0 });
 
-// console.log(countsFizzBuzz);
-// console.log(numbersListArr[2])
 
+function countsFizzBuzz(arr) {
+    const countsObj = arr.reduce(function (final, number) {
+        if (number.includes("fizz") && !number.includes("buzz")) {
+            final.fizz++
+        }
+        if (number.includes("buzz") && !number.includes("fizz")) {
+            final.buzz++
+        }
+        if (number.includes("fizzbuzz")) {
+            final.fizzbuzz++
+        }
+        return final
+    }, { fizz: 0, buzz: 0, fizzbuzz: 0 })
+    return countsObj
+}
+console.log(countsFizzBuzz(numbersListArr))
 
 
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div>Please enter your travel information</div>
+    </header>
+    <div>
+        <form name="travel-info">
+            <div id="name-age-info">
+                First name: <input type="text" name="first-name" id="">
+                <br>
+                Last Name: <input type="text" name="last-name" id="">
+                <br>
+                Age: <input type="number" name="age" id="">
+            </div>
+            <div id="gender-info">
+                <div>I identify my gender as:</div>
+                Woman <input type="radio" name="gender" value="Woman" />
+                <br>
+                Man <input type="radio" name="gender" value="Man" />
+                <br>
+                Genderqueer/Non-binary <input type="radio" name="gender" value="Genderqueer/Non-binary" />
+                <br>
+                Prefer not to say <input type="radio" name="gender" value="Prefer not to say" />
+            </div>
+            <div id="location-info">
+                <div>Where are you traveling?</div>
+                <select name="location">
+                    <option value="San Diego">San Diego</option>
+                    <option value="DC">Washington, DC</option>
+                    <option value="New York City">New York City</option>
+                    <option value="Austin">Austin</option>
+                </select>
+            </div>
+            <div id="diet-info">
+                <div>Let us know about any dietary restrictions: </div>
+
+                Vegetarian <input type="checkbox" value="vegetarian" name="diet" />
+                <br>
+                Kosher <input type="checkbox" value="kosher" name="diet" />
+                <br>
+                Gluten-Free <input type="checkbox" value="gluten-free" name="diet" />
+                <br>
+                Kid meal <input type="checkbox" value="kid meal" name="diet" />
+            </div>
+            <br>
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

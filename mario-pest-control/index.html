@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Pest Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        Mario Pest Control
+    </header>
+    <div id="main">
+        <form name="baddies-caught">
+            <ul>
+                <li>
+                    <img src="Goomba_-_Mario_Party_Superstars.webp" alt="goomba">
+                    Goombas<br>5 coins each
+                    <br>Total caught: <input type="text" name="goombas">
+                </li>
+                <li>
+                    <img src="Bobomb_-_MarioPartyStarRush.webp" alt="bobomb">
+                    Bob-ombs<br>7 coins each
+                    <br>Total caught: <input type="text" name="bobombs">
+                </li>
+                <li>
+                    <img src="CheepCheepNSMBU.webp" alt="cheepcheep">
+                    Cheep-cheeps<br>11 coins each
+                    <br>Total caught: <input type="text" name="cheepcheeps">
+                </li>
+            </ul>
+            <button id="total-button">Calculate totals</button>
+        </form>
+
+        <div id="totals">
+            <span>Total number of baddies caught: </span>
+            <span id="total-caught">_____</span>
+            <br>
+            <span>Total price: </span>
+            <span id="total-price">_____</span><span> coins</span>
+        </div>
+    </div>
+    <footer>
+        <div>mariopestcontrol.com</div>
+        <div>email: mario@mariopestcontrol.com</div>
+        <div>359 Koopa Beach Rd</div>
+        <div>Yoshi Valley, Mushroom Kingdom 10009</div>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
