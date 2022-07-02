@@ -28,7 +28,7 @@ setTimeout(function () {
 const timer = document.getElementById("timer")
 
 let countdown = 10
-// let intervalId
+
 timer.textContent = countdown
 
 function decrementTimer() {

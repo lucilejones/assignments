@@ -17,3 +17,6 @@ form.addEventListener("submit", function (event) {
     // totalPrice.textContent = totalAmount
     document.getElementById("total-price").textContent = totalAmount
 })
+
+
+

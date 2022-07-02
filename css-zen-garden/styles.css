@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Verde Moderna";
+    src: url(verdemoderna.woff) format("woff");
+}
+
+.icon {
+    font-family: 'Verde Moderna';
+    color: #fff;
+    opacity: 0.5;
+    font-size: 32px;
+}
+
+.julius1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 23px;
+}
+
+.julius2 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 17px;
+}
+
+.julius3 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 23px;
+}
+
+.julius4 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 18px;
+}
+
+.libre {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.libre2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.libre3 {
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 15px;
+}
+
+.libre4 {
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(255, 255, 255, 0.7);
+    font-size: 15px;
+}
+
+.libre5 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 12px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 15px 0px 0px 15px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 70px auto auto auto auto 85px auto auto 0px;
+    grid-template-areas:
+        "h"
+        "h"
+        "m1"
+        "m2"
+        "m3"
+        "f1"
+        "f2"
+        "s1"
+        "s2"
+        "s3";
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 180px 70px 1410px 1380px 1380px 124px 85px 530px 252px 0px; */
+}
+
+#brushstroke {
+    width: 50px;
+    height: auto;
+    opacity: 0.6;
+}
+
+#header-container {
+    background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/huntington.jpg);
+    background-size: cover;
+    grid-area: h;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "head1"
+        "head1"
+        "head2";
+}
+
+#header1 {
+    grid-area: head1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    line-height: 2em;
+    border-top: #134347 solid 10px;
+}
+
+#title {
+    text-align: center;
+}
+
+#header2 {
+    grid-area: head2;
+    background-color: rgb(255, 255, 255, 0.3);
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow {
+    padding-top: 8.5px;
+}
+
+#main1 {
+    grid-area: m1;
+    /* grid-row: 3 / 4; */
+    padding: 35px;
+    color: #325050;
+    background-color: #fff;
+}
+
+#main1>p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#main2 {
+    background-color: rgba(138, 188, 159, 0.5);
+    background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+    background-position: fixed;
+    grid-area: m2;
+    /* grid-row: 4 / 5; */
+    padding: 35px;
+    color: #325050;
+}
+
+#main2>p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#main3 {
+    grid-area: m3;
+    padding: 35px;
+    color: #325050;
+    background-color: #fff;
+    /* grid-row: 5 / 6; */
+}
+
+#main3>p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#sidebar1 {
+    background-color: #edf4f0;
+    grid-area: s1;
+    /* grid-row: 8 / 9; */
+    color: #325050;
+}
+
+#design-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 70px;
+}
+
+#other-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 50px;
+}
+
+#sidebar2 {
+    background-color: rgba(138, 188, 159, 0.5);
+    background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
+    grid-area: s2;
+    /* grid-row: 9 / 10; */
+    color: #325050;
+}
+
+/* don't display sidebar3 in the mobile */
+#sidebar3 {
+    background-color: #edf4f0;
+    /* grid-row: 10 / 11; */
+}
+
+#footer1 {
+    background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/koi.jpg);
+    grid-area: f1;
+    /* grid-row: 6 / 7; */
+    padding: 25px;
+    text-align: center;
+    line-height: 2em;
+}
+
+#footer2 {
+    background-color: #134347;
+    grid-area: f2;
+    /* grid-row: 7 / 8; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px 15px 20px;
+}
+
+@media screen and (min-width: 375px) {
+    .libre3 {
+        font-family: 'Libre Baskerville', serif;
+        color: rgb(255, 255, 255, 0.5);
+        font-size: 20px;
+    }
+
+    .libre4 {
+        font-family: 'Libre Baskerville', serif;
+        color: rgb(255, 255, 255, 0.7);
+        font-size: 22px;
+    }
+
+    li {
+        padding: 15px 0px 0px 80px;
+    }
+
+    #footer1 {
+        padding: 22px;
+        line-height: 3em;
+    }
+
+    #footer2 {
+        padding: 15px 50px 15px 50px;
+    }
+
+    .icon {
+        font-size: 40px;
+    }
+
+    #design-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 50%));
+        grid-auto-rows: 100px;
+    }
+
+    #other-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 50%));
+        grid-auto-rows: 100px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    #design-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 50%));
+        grid-auto-rows: 100px;
+    }
+
+    #other-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 50%));
+        grid-auto-rows: 70px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #footer2 {
+        padding: 15px 200px 15px 200px;
+    }
+}
+
+
+
+@media screen and (min-width: 1100px) {
+    #grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 310px auto auto auto 320px 176px;
+        /* grid-template-rows: 310px 1033px 785px 894px 320px 176px; */
+        grid-template-areas:
+            "h1 h1 h1"
+            "m1 m1 s1"
+            "m2 m2 s2"
+            "m3 m3 s3"
+            "f1 f1 f1"
+            "f2 f2 f2";
+    }
+
+    #header-container {
+        grid-area: h1;
+        background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/huntington.jpg);
+        background-position: left, top, center;
+        background-size: auto, 15%, cover;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "head1 head1 head2";
+    }
+
+    #header1 {
+        grid-area: head1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "logo title title"
+            "logo title title";
+    }
+
+    .julius1 {
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 50px;
+    }
+
+    .julius2 {
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 20px;
+    }
+
+    .julius3 {
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 20px;
+        line-height: 3em;
+    }
+
+    .julius4 {
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 20px;
+    }
+
+    .libre2 {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 24px;
+        line-height: 2em;
+        padding-top: 15px;
+        color: rgb(255, 255, 255, 0.6);
+    }
+
+    .libre3 {
+        font-family: 'Libre Baskerville', serif;
+        color: rgb(255, 255, 255, 0.5);
+        font-size: 33px;
+    }
+
+    .libre4 {
+        font-family: 'Libre Baskerville', serif;
+        color: rgb(255, 255, 255, 0.7);
+        font-size: 33px;
+    }
+
+    .libre5 {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 14px;
+    }
+
+    li {
+        padding: 80px 0px 0px 80px;
+    }
+
+    #header2 {
+        grid-area: head2;
+        background-color: #13434720;
+        display: flex;
+        align-items: center;
+    }
+
+    .arrow {
+        padding: 29px 40px 29px 40px;
+        background-color: rgb(255, 255, 255, 0.1);
+        margin: 2px;
+    }
+
+    .arrow2 {
+        background-color: rgb(255, 255, 255, 0.3);
+    }
+
+    #brushstroke {
+        grid-area: logo;
+        width: 125px;
+        height: auto;
+        opacity: 1;
+        padding-left: 125px;
+        padding-right: 50px;
+        padding-bottom: 30px;
+    }
+
+    #title {
+        grid-area: title;
+        text-align: left;
+    }
+
+    #main1 {
+        grid-area: m1;
+        /* grid-column: 1 / 3;
+        grid-row: 2 / 3; */
+        padding: 65px 65px 65px 100px;
+    }
+
+    #main1>p {
+        margin-bottom: 20px;
+    }
+
+    #sidebar1 {
+        grid-area: s1;
+        /* grid-column: 3 / 4;
+        grid-row: 2 / 3; */
+    }
+
+    #main2 {
+        grid-area: m2;
+        /* grid-column: 1 / 3;
+        grid-row: 3 / 4; */
+        background-size: 25%, 25%, cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 75px 75px 75px 100px;
+    }
+
+    #main2>p {
+        margin-bottom: 20px;
+    }
+
+    #sidebar2 {
+        grid-area: s2;
+        /* grid-column: 3 / 4;
+        grid-row: 3 / 4; */
+        background-size: auto, auto, cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    #design-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 100px;
+    }
+
+    #other-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 100px;
+    }
+
+
+    #main3 {
+        grid-area: m3;
+        /* grid-column: 1 / 3;
+        grid-row: 4 / 5; */
+        padding: 75px 75px 75px 100px;
+    }
+
+    #main3>p {
+        margin-bottom: 20px;
+    }
+
+    #sidebar3 {
+        grid-area: s3;
+        /* grid-column: 3 / 4;
+        grid-row: 4 / 5; */
+    }
+
+    #footer1 {
+        grid-area: f1;
+        /* grid-column: 1 / 4;
+        grid-row: 5 / 6; */
+        background-position: center;
+        padding: 100px 120px 100px 120px;
+        line-height: 3.5em;
+    }
+
+    #footer2 {
+        grid-area: f2;
+        /* grid-column: 1 / 4;
+        grid-row: 6 / 7; */
+        padding: 15px 200px 15px 200px;
+    }
+
+    .icon {
+        font-family: 'Verde Moderna';
+        color: #fff;
+        opacity: 0.5;
+        font-size: 73px;
+    }
+}

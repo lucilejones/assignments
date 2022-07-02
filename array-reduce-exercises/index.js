@@ -32,15 +32,15 @@ console.log(stringConcat([52, 17, 5, 23, 7, 988]))
 
 // 3. turn an array of voter objects into a count of how many people voted
 
-// function totalVotes(arr) {
-//     const voteCount = arr.reduce(function (final, voter) {
-//         if (voter.voted) {
-//             final++
-//         }
-//         return final
-//     }, 0)
-//     return voteCount
-// }
+function totalVotes(arr) {
+    const voteCount = arr.reduce(function (final, voter) {
+        if (voter.voted) {
+            final++
+        }
+        return final
+    }, 0)
+    return voteCount
+}
 
 var voters = [
     { name: 'Bob', age: 30, voted: true },
@@ -70,15 +70,15 @@ var voters = [
 // }
 // console.log(totalVotes(voters))
 
-function totalVotes(arr) {
-    const voteCount = arr.filter(function (voter) {
-        if (voter.voted) {
-            return true
-        }
-    })
-    return voteCount.length
-}
-console.log(totalVotes(voters))
+// function totalVotes(arr) {
+//     const voteCount = arr.filter(function (voter) {
+//         if (voter.voted) {
+//             return true
+//         }
+//     })
+//     return voteCount.length
+// }
+// console.log(totalVotes(voters))
 
 
 // 4. given an array of all your wishlist items, figure out how much it would cost to just buy everything at once
