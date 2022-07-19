@@ -1,0 +1,124 @@
+{
+    "menu": [
+        {
+            "appetizers": [
+                {
+                    "name": "Wings",
+                    "ingredients": [
+                        "chicken",
+                        "spices",
+                        "sauce"
+                    ],
+                    "description": "Hot and spicy!"
+                },
+                {
+                    "name": "Samosas",
+                    "ingredients": [
+                        "spiced potatoes",
+                        "onions",
+                        "peas",
+                        "chutney"
+                    ],
+                    "description": "Fried pastry with a savory filling."
+                }
+            ],
+            "coldSandwiches": [
+                {
+                    "name": "Italian Sub",
+                    "ingredients": [
+                        "french baguette",
+                        "pepperoni",
+                        "salami",
+                        "lettuce",
+                        "deli dressing",
+                        "tomato",
+                        "red onion"
+                    ],
+                    "description": "Classic cold cut sandwich."
+                },
+                {
+                    "name": "Turkey Club",
+                    "ingredients": [
+                        "croissant roll",
+                        "turkey",
+                        "guacomole",
+                        "lettuce",
+                        "bacon"
+                    ],
+                    "description": "Simple and delicious."
+                }
+            ],
+            "hotSandwiches": [
+                {
+                    "name": "Monte Cristo",
+                    "ingredients": [
+                        "white bread",
+                        "sliced ham",
+                        "sliced turkey",
+                        "swiss cheese",
+                        "powdered sugar",
+                        "raspberry jam"
+                    ],
+                    "description": "A decadent sweet and savory combo."
+                },
+                {
+                    "name": "Grilled Cheese",
+                    "ingredients": [
+                        "ciabatta wheat bread",
+                        "provolone and meunster cheese",
+                        "pesto sauce"
+                    ],
+                    "description": "A pesto version of everyone's favorite sandwich."
+                }
+            ],
+            "desserts": [
+                {
+                    "name": "Tiramisu",
+                    "ingredients": [
+                        "mascarpone cheese",
+                        "whipping cream",
+                        "vanilla",
+                        "espresso",
+                        "landy fingers",
+                        "cocoa powder"
+                    ],
+                    "description": "Creamy, sweet, and delicious."
+                },
+                {
+                    "name": "Chocolate Cheesecake",
+                    "ingredients": [
+                        "semisweet chocolate",
+                        "heavy cream",
+                        "cream cheese",
+                        "cocoa powder",
+                        "eggs",
+                        "vanilla"
+                    ],
+                    "description": "A chocolate lover's dream!"
+                }
+            ],
+            "drinks": [
+                {
+                    "name": "Horchata",
+                    "ingredients": [
+                        "white rice",
+                        "cinnamon",
+                        "sliced almonds",
+                        "vanilla"
+                    ],
+                    "description": "Smooth and sweet."
+                },
+                {
+                    "name": "Root Beer",
+                    "ingredients": [
+                        "ginger bug",
+                        "dandelion root",
+                        "licorice root",
+                        "sarsaparilla root bark"
+                    ],
+                    "description": "Classic and satisfying."
+                }
+            ]
+        }
+    ]
+}
