@@ -1,65 +1,4 @@
 * {
-<<<<<<< HEAD
-    margin: none;
-    box-sizing: border-box;
-}
-
-body {
-    text-align: center;
-}
-
-#header {
-    margin-bottom: 15px;
-}
-
-#to-do-form {
-    display: flex;
-    flex-direction: column;
-    width: 66vw;
-    margin-left: 17vw;
-    margin-right: 17vw;
-    margin-bottom: 25px;
-
-}
-
-#submit-button {
-    width: 32vw;
-    margin-left: 14vw;
-    margin-right: 14vw;
-}
-
-#todo-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.item-box {
-    border: 1px solid;
-    border-radius: 25px;
-    margin: 10px;
-}
-
-.image {
-    border-radius: 25px;
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 10px;
-
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 27vw;
-    margin-right: 27vw;
-}
-
-.completed-box {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 45vw;
-    margin-right: 45vw;
-=======
     margin: 0px;
     box-sizing: border-box;
 
@@ -127,5 +66,4 @@ body {
     #todo-list {
         grid-column: 2 / 3;
     }
->>>>>>> 81175451261f8686a2e0f93ecbbb5d7614d162ca
 }
